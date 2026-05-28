@@ -59,7 +59,7 @@ sudo usermod -aG docker $USER
 
 ## Склонировать репозиторий и войти в него
 ```
-git clone [https://github.com/Zer0Shad0w/tz-docker-nginx-example.git](https://github.com/Zer0Shad0w/tz-docker-nginx-example.git) && cd tz-docker-nginx-example`
+git clone https://github.com/Zer0Shad0w/tz-docker-nginx-example.git && cd tz-docker-nginx-example`
 ```
 
 ---
