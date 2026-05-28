@@ -17,58 +17,58 @@
 
 	- Fedora:
 
-	`sudo dnf install -y docker docker-compose-plugin` 
+		`sudo dnf install -y docker docker-compose-plugin` 
 
-	- Debian/Ubuntu/LMDE
+	- Debian/Ubuntu/LMDE:
 
-	`sudo apt update && sudo apt install -y docker.io docker-compose-plugin`
+		`sudo apt update && sudo apt install -y docker.io docker-compose-plugin`
 
-	- Arch
+	- Arch:
 
-	`sudo pacman -S docker docker-compose`
+		`sudo pacman -S docker docker-compose
 
-	Запуск для вышеуказанных и других систем использующих systemd:
+	- Запуск для вышеуказанных и других систем использующих systemd:
 
-	`sudo systemctl enable --now docker`
+		`sudo systemctl enable --now docker
 
-	- Alpine Linux
+	- Alpine Linux:
 
-	`sudo apk add docker docker-cli-compose`
+		`sudo apk add docker docker-cli-compose
 
-	`sudo rc-service docker start`
+		`sudo rc-service docker start
 
-	`sudo rc-update add docker`
+		`sudo rc-update add docker
 
 	- Проверка:
 
-	`docker --version`
+		`docker --version
 
 (Опционально) Добавление пользователя в докер группу для запуска docker-контейнера без sudo:
 
-	`newgrp docker`
-	`sudo usermod -aG docker $USER`
+	`newgrp docker
+	`sudo usermod -aG docker $USER
 
 Склонировать репозиторий и войти в него
 
-	`git clone https://github.com/Zer0Shad0w/tz-docker-nginx-example.git && cd tz-docker-nginx-example`
+	`git clone https://github.com/Zer0Shad0w/tz-docker-nginx-example.git && cd tz-docker-nginx-example
 
 В корне проекта создать файл .env
 	`NGINX_PORT=8080` # вместо 8080 можно указать незанятый желаемый порт
 
 Запуск приложения
 
-	`docker-compose up --build`
+	`docker-compose up --build
 
 Запуск приложение в качестве даемона
 
-	`docker-compose up --build -d`
+	`docker-compose up --build -d
 
 Для остановки в таком случае
 
-	`docker-compose down`
+	`docker-compose down
 
 Теперь localhost с указанным портом будет выдавать работу backend'а
 
-	`http://localhost:<NGINX_PORT>`
+	`http://localhost:<NGINX_PORT>
 
 - сделано Zer0Shad0w
