@@ -83,4 +83,3 @@ sudo usermod -aG docker $USER`
 [http://localhost](http://localhost):<NGINX_PORT>
 
 * сделано Zer0Shad0w
-
