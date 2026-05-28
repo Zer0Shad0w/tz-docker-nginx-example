@@ -33,9 +33,9 @@
 
 ### Alpine Linux:
 
-`sudo apk add docker docker-cli-compose`
-`sudo rc-service docker start`
-`sudo rc-update add docker`
+`sudo apk add docker docker-cli-compose
+sudo rc-service docker start
+sudo rc-update add docker`
 
 ### Проверка:
 
@@ -45,8 +45,8 @@
 
 ## (Опционально) Добавление пользователя в докер группу для запуска docker-контейнера без sudo:
 
-`newgrp docker`
-`sudo usermod -aG docker $USER`
+`newgrp docker
+sudo usermod -aG docker $USER`
 
 ---
 
