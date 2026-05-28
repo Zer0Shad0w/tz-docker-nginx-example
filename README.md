@@ -62,8 +62,6 @@ sudo usermod -aG docker $USER
 git clone https://github.com/Zer0Shad0w/tz-docker-nginx-example.git && cd tz-docker-nginx-example`
 ```
 
----
-
 ## В корне проекта создать файл .env
 ```
 NGINX_PORT=8080 # вместо 8080 можно указать незанятый желаемый порт`
